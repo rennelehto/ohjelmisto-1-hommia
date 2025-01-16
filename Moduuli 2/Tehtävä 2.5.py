@@ -15,7 +15,7 @@ grammamuunnos = (leiviskä)+(naula)+(luoti)
 
 grammat = (grammamuunnos*13.3)
 Kilot = int(grammat/1000)
-loputgrammat = float(grammat-Kilot)
+loputgrammat = float(Kilot%1000)
 
 print (f'Paino nykyään olisi {Kilot} kiloa ja {loputgrammat} grammaa.')
 
