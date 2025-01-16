@@ -1,21 +1,29 @@
-Leiviskä = input('Anna leivisköjen määrä: ')
-naula = input('Anna naulojen määrä: ')
-luoti = input('Anna naulojen määrä: ')
+from idlelib.pyshell import fix_x11_paste
 
-luoti = 13 * gramma
+leiviskä = input('Anna leivisköjen määrä: ')
+naula = input('Anna naulojen määrä: ')
+luoti = input('Anna luotien määrä: ')
+
+leiviskä = float(leiviskä)
+naula = float(naula)
+luoti = float(luoti)
+
 naula = (luoti * 32)
 leiviskä = (naula * 20)
-kilo = 1000 * gramma
 
-väligrammat =
+grammamuunnos = (leiviskä)+(naula)+(luoti)
 
-print (f'Massa nykymittojen muukaan on {kilot} kiloa ja {grammat} grammaa.')
+grammat = (grammamuunnos*13.3)
+Kilot = int(grammat/1000)
+loputgrammat = float(grammat-Kilot)
+
+print (f'Paino nykyään olisi {Kilot} kiloa ja {loputgrammat} grammaa.')
 
 
->Kirjoita ohjelma, joka kysyy käyttäjältä massan keskiaikaisten mittojen mukaan
->leivisköinä, nauloina ja luoteina. Ohjelma muuntaa syötteen täysiksi kilogrammoiksi
->ja grammoiksi sekä ilmoittaa tuloksen käyttäjälle.
 
- >   Yksi leiviskä on 20 naulaa.
- >   Yksi naula on 32 luotia.
-  >  Yksi luoti on 13,3 grammaa.
+
+
+
+
+
+
