@@ -7,5 +7,5 @@ korkeus = float(korkeus_str)
 piiri = float(kanta)*2+(korkeus)*2
 pinta = float(kanta)*(korkeus)
 
-print (f'Suorakaiteen piiri on {piiri} + ja pinta-ala on {pinta}')
+print (f'Suorakaiteen piiri on {piiri}  ja pinta-ala on {pinta}')
 
