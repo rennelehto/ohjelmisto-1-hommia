@@ -9,7 +9,7 @@ pituus_str=input('Anna kuhan pituus senttimetreinä: ')
 pituus= float(pituus_str)
 määrä=37-pituus
 if pituus < 37:
-    print (f'Kuha on {määrä} cm alamittainen, laske se takaisin veteen.')
+    print (f'Kuha on {määrä} cm alimittainen, laske se takaisin veteen.')
 else:
     print ('Hyvä saalis!')
 
