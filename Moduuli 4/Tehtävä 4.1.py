@@ -2,13 +2,14 @@
 # joka tulostaa kolmella jaolliset
 # luvut väliltä 1..1000.
 import math
+kolme=3
+while kolme<1000:
+    if kolme>1:
+        kolme=kolme+3
 
-luku=1
-lukukaks = luku + 1
-lukukaks<=1000
+    print(f'{kolme}')
 
-while lukukaks%3==0:
-    print(f'(luku2)')
+
 
 
 
