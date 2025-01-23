@@ -5,6 +5,9 @@ Käytä for-toistorakennetta.'''
 import random
 import math
 
+
+
+
 '''noppaluku=[]
 nopat=(input('Kuinka montaa nopaa heitetään? '))
 noppa=(random.randint(1, 6))
@@ -13,14 +16,22 @@ while nopat!='':
     (noppaluku.append(nopat))
     for 
 '''
-
-nopat=0
 tulokset=[]
-while nopat>0:
-    nopat = (input('Kuinka montaa nopaa heitetään? '))
+heitot = 0
+while heitot>0:
+    heitot = (input('Kuinka montaa nopaa heitetään? '))
+    noppa = (random.randint(1, 6))
     tulokset.append(noppa)
-    noppa=((random.randint(1, 6))
-    nopat=nopat+1
+    if noppa>1:
+            noppa=noppa+noppa
+
+
+for vastaus in tulokset:
+    vastaus=noppa
+    print(f'Noppien silmälukujen summa on {vastaus}')
+
+else:
+    print('Vituiks meni.')
 
 
 '''kerrat=0
