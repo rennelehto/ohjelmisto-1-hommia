@@ -10,3 +10,4 @@ while tuuma>0:
     print(f'{tuuma} tuumaa on {tuuma*2.54} senttimetriä')
     if tuuma<0:
         break
+
