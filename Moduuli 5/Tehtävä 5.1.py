@@ -2,17 +2,18 @@
 Ohjelma heittää kerran kaikkia arpakuutioita ja tulostaa silmälukujen summan.
 Käytä for-toistorakennetta.'''
 
+#miten for-rakenne mahtuu tähän?????
+
 import random
 import math
 
+kerrat=int(input('Kuinka montaa noppaa heitetään? '))
+kierros=0
 tulokset=[]
-
-heitot = int(input('Kuinka montaa nopaa heitetään? '))
-while heitot>=1:
-
-    noppa = (random.randint(1, 6))
-    tulokset.append(noppa)
-    if heitot>1:
-        heitot=heitot+1
-        print(f'{tulokset}')
-        break
+summa=0
+while kerrat>kierros:
+    luku=(random.randint(1, 6))
+    tulokset.append(luku)
+    kierros=kierros+1
+    summa = summa + luku
+print(f'{summa}')
