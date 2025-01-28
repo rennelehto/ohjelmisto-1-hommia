@@ -1,8 +1,11 @@
-luku=input('Syötä luku: ')
+
+
+luku_str= input('Syötä luku: ')
 luvut=[]
-while luku!='':
-    luku = input('Syötä luku: ')
-    luvut.append(luku)
-    if luku=='':
-        luvut.sort(reverse=True)
-        print(luvut[0:4])
+while luku_str!='':
+    luvut.append(int(luku_str))
+    luku_str = input('Syötä luku: ')
+
+else:
+    luvut.sort(reverse=True)
+    print(luvut[0:5])
