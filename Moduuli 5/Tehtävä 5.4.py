@@ -7,11 +7,11 @@ kaupunkien nimet yksi kerrallaan allekkain samassa järjestyksessä
  ja for/in toistorakennetta niiden läpikäymiseen.'''
 
 kaupungit = []
-syötteet=1
-while syötteet<=5:
+
+for kaupunki in range(0,5):
     kaupunki = input("Anna kaupungin nimi: ")
     kaupungit.append(kaupunki)
-    syötteet=syötteet+1
+
 else:
     for kaupunki in kaupungit:
         print(kaupunki)
