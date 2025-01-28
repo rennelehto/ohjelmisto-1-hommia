@@ -7,7 +7,6 @@ import random
 import math
 
 
-
 kerrat=int(input('Kuinka montaa noppaa heitetään? '))
 tulokset=[]
 for luku in range(0, kerrat):
