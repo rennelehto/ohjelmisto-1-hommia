@@ -7,23 +7,14 @@
 
  #   Yksi gallona on 3,785 litraa.
 
-gallonat = float(input('Syötä gallonamäärä: '))
 
+gallonat = float(input('Syötä gallonamäärä: '))
 def bensiini(gallonat):
     litrat=gallonat*3.785
-    vastaus = print (f'{gallonat} gallonaa on {gallonat*3.785} litraa.')
-    return vastaus
-
-bensiini(gallonat)
+    return litrat
+while gallonat>=0:
+    litrat=bensiini(gallonat)
+    print(f'{gallonat} gallonaa on {litrat} litraa.')
+    gallonat = float(input('Syötä gallonamäärä: '))
 if gallonat<=0:
-
     print('Kiitos!')
-
-
-'''vastaus=gallonat/3.785
-if vastaus >= 3.785:
-    print('Kiva kiitti.')
-    
-    print(f'{litrat}')'''
-
-
