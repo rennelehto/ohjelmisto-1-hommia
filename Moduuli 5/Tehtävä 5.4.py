@@ -8,12 +8,10 @@ kaupunkien nimet yksi kerrallaan allekkain samassa järjestyksessä
 
 kaupungit = []
 
-for kaupunki in range(0,5):
+for kukkanen in range(0,5):
     kaupunki = input("Anna kaupungin nimi: ")
     kaupungit.append(kaupunki)
 
 else:
     for kaupunki in kaupungit:
         print(kaupunki)
-
-

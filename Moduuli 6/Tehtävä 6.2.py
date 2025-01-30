@@ -10,6 +10,7 @@ tahkot=int(input('Anna noppien tahkojen määrä: '))
 def noppa(tahkot):
     luku = int(random.randint(1, tahkot))
     print(f'{luku}')
+
     return
 luku2=noppa(tahkot)
 while luku2!=noppa(tahkot):
