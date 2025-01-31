@@ -6,11 +6,13 @@ Pääohjelma tulostaa kunkin heiton jälkeen saadun silmäluvun.'''
 import random
 
 def noppa():
-    perse = print(f'{(random.randint(1, 6))}')
-    return perse
+    y = print(f'{(random.randint(1, 6))}')
+    return y
 
 print('Heitetään noppaa...')
-pylly = noppa()
-if pylly != 6:
+p = noppa()
+if p != 6:
     noppa()
+else:
+    print(p)
 print('Hyvä peli!')

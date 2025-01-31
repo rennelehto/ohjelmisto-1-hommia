@@ -15,6 +15,7 @@ def noppa(tahkot):
 luku2=noppa(tahkot)
 while luku2!=noppa(tahkot):
     noppa(tahkot)
-
+else:
+    print(tahkot)
 print('Hyvä peli!')
 
