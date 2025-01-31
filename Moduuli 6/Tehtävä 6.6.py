@@ -8,11 +8,9 @@ import math
 
 
 
-def pizzapie(ekapiz, tokapiz):
-
-
-    ekapiz=Yks/Halk
-    tokapiz=Yks2/Halk2
+def pizzapie():
+    ekapiz=Halk/Yks
+    tokapiz=Halk2/Yks2
     if ekapiz>tokapiz:
         print('Ensimmäinen pizza on halvempi')
     else:
@@ -23,5 +21,5 @@ Yks = float(input('Anna pizzan hinta: '))
 Halk2 = float(input('Anna toisen pizzan halkaisija: '))
 Yks2 = float(input('Anna toisen pizzan hinta: '))
 
-pizzapie(ekapiz, tokapiz)
+pizzapie()
 print('Hyvää ruokahalua!')
