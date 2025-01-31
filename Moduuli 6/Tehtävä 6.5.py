@@ -14,6 +14,6 @@ def poistolista(numero):
 
 numerot=[1,3,5,65,76,34,34,56,65,32]
 
-perse=poistolista(numerot)
+pois=poistolista(numerot)
 print(numerot)
-print(perse)
+print(pois)
