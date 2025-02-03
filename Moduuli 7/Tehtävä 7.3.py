@@ -13,20 +13,21 @@
 asemat={'333':'sss'}
 
 def lööps():
-    toiminto = input('Kirjoita S syöttääksesi uuden lentoaseman, H hakeaksesi jo syötetyn aseman tietoja tai X lopettaaksesi: ')
-
-    if toiminto=='s':
-            uusinimi = input('Syötä aseman nimi: ')
-            uusikoodi = input('Syötä aseman ICAO-koodi: ')
-            asemat[uusikoodi] = uusinimi
-    if toiminto=='h':
-        koodi=input('Syötä aseman ICAO-koodi: ')
-        if koodi in asemat:
-            print(f'Aseman {koodi} nimi on {asemat[koodi]}.')
-        else:
-            print('Koodia ei löydy tietokannasta.')
+    toiminto = input('Kirjoita [s] syöttääksesi uuden lentoaseman, [h] hakeaksesi jo syötetyn aseman tietoja tai [x] lopettaaksesi: ')
+    while toiminto != 'x':
+        if toiminto=='s':
+                uusinimi = input('Syötä aseman nimi: ')
+                uusikoodi = input('Syötä aseman ICAO-koodi: ')
+                asemat[uusikoodi] = uusinimi
+        elif toiminto=='h':
+            koodi=input('Syötä aseman ICAO-koodi: ')
+            if koodi in asemat:
+                print(f'Aseman {koodi} nimi on {asemat[koodi]}.')
+            else:
+                print('Koodia ei löydy tietokannasta.')
     return
 
-töim=lööps()
-if töim == 'x':
-    print('Kiitos!')
+print('Käynnistetään..')
+lööps()
+print('Kiitos!')
+
