@@ -19,7 +19,7 @@ def lööps():
                 uusinimi = input('Syötä aseman nimi: ')
                 uusikoodi = input('Syötä aseman ICAO-koodi: ')
                 asemat[uusikoodi] = uusinimi
-                print(f'Lisätiin asema {uusinimi} ICAO-koodi {uusikoodi}.')
+                print(f'Lisättiin asema {uusinimi} ICAO-koodi {uusikoodi}.')
         elif toiminto=='h' or toiminto=='H':
             koodi=input('Syötä aseman ICAO-koodi: ')
             if koodi in asemat:
