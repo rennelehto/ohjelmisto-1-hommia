@@ -5,51 +5,17 @@
 # Määritellään kukin vuodenaika kolmen kuukauden mittaiseksi siten,
 # että joulukuu on ensimmäinen talvikuukausi.
 
+kuukausi = int(input("Anna kuukauden numero: "))
+vuodenajat = ("talvi", "kevät", "kesä", "syys")
 
-
-
-kuukausi = (input("Anna kuukauden numero: "))
-vuodenajat = ("talvi", "kevät", "kesä", "syksy")
-if kuukausi == 12 or 1 or 2:
-        print(f'Kuu on {vuodenajat[0]}kuukausi.')
-if kuukausi == 3 or 4 or 5:
-        print(f'Kuu on {vuodenajat[1]}kuukausi.')
-if kuukausi == 6 or 7 or 8:
-        print(f'Kuu on {vuodenajat[2]}kuukausi.')
-if kuukausi == 9 or 10 or 11:
-        print(f'Kuu on {vuodenajat[3]}kuukausi.')
+if kuukausi in range(1, 13):
+        if kuukausi == 12 or kuukausi == 1 or kuukausi == 2:
+                print(f'Kuu on {vuodenajat[0]}kuukausi.')
+        elif kuukausi == 3 or kuukausi == 4 or kuukausi == 5:
+                print(f'Kuu on {vuodenajat[1]}kuukausi.')
+        elif kuukausi == 6 or kuukausi == 7 or kuukausi == 8:
+                print(f'Kuu on {vuodenajat[2]}kuukausi.')
+        elif kuukausi == 9 or kuukausi == 10 or kuukausi == 11:
+                print(f'Kuu on {vuodenajat[3]}kuukausi.')
 else:
         print('Eihän tuo ole kuukausi!')
-
-
-
-
-
-
-
-'''if kuukausi == 12 or 1 or 2:
-    kuu=vuodenajat[0]
-elif kuukausi == 3 or 4 or 5:
-    kuu=vuodenajat[1]
-elif kuukausi == 6 or 7 or 8:
-    kuu=vuodenajat[2]
-elif kuukausi == 9 or 10 or 11:
-    kuu=vuodenajat[3]
-    print(f'Kuu on {kuu}kuukausi.')'''
-
-   # else:
-      #  print('Eihän tuo ole kuukausi!')
-
-
-   # return kuu
-
-
-#kaudet()
-#kk=kaudet()
-
-
-
-
-
-
-

@@ -6,20 +6,16 @@
 # luettelee syötetyt nimet yksi kerrallaan allekkain mielivaltaisessa
 # järjestyksessä. Käytä joukkotietorakennetta nimien tallentamiseen.
 
-
-
 nimet = set()
-def pööt():
+def lööps():
     nimi = input("Kirjoita nimi: ")
-    if nimi !='':
-        if nimi in nimet:
-                print('Aiemmin syötetty.')
-        else:
-            nimet.add(nimi)
-            print('Uusi nimi')
-    return
-
-pööt()
-
-'''for n in nimet:
-    print(nimet)'''
+    if nimi in nimet:
+         print('Aiemmin syötetty.')
+    else:
+        nimet.add(nimi)
+        print('Uusi nimi')
+    return nimi
+while lööps() != '':
+    lööps()
+else:
+    print('Kiva juttu')

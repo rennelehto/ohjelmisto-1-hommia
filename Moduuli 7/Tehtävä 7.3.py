@@ -10,24 +10,23 @@
 # yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK.
 # Löydät koodeja helposti selaimen avulla.)
 
-asemat={'333':'sss'}
+asemat={'333':'sss','444':'rrr'}
 
 def lööps():
-    toiminto = input('Kirjoita [s] syöttääksesi uuden lentoaseman, [h] hakeaksesi jo syötetyn aseman tietoja tai [x] lopettaaksesi: ')
-    while toiminto != 'x':
-        if toiminto=='s':
+    toiminto = input('Kirjoita [S] syöttääksesi uuden lentoaseman, [H] hakeaksesi jo syötetyn aseman tietoja tai [X] lopettaaksesi: ')
+    if toiminto != 'x' or toiminto != 'X':
+        if toiminto=='s' or toiminto=='S':
                 uusinimi = input('Syötä aseman nimi: ')
                 uusikoodi = input('Syötä aseman ICAO-koodi: ')
                 asemat[uusikoodi] = uusinimi
-        elif toiminto=='h':
+        elif toiminto=='h' or toiminto=='H':
             koodi=input('Syötä aseman ICAO-koodi: ')
             if koodi in asemat:
                 print(f'Aseman {koodi} nimi on {asemat[koodi]}.')
             else:
                 print('Koodia ei löydy tietokannasta.')
-    return
+    return toiminto
 
-print('Käynnistetään..')
-lööps()
-print('Kiitos!')
-
+while lööps()!= 'x':
+    lööps()
+print('Heihei!')
